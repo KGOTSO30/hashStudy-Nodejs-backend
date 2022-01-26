@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
     <div>
@@ -29,6 +30,7 @@
                 />
             </div>
            
+           
             <div> 
                 <input
                 type="tel"
@@ -52,9 +54,25 @@
                 placeholder="password"
                 />
             </div>
+
+            <div>
+                <select name = "role">
+                <option value = "role" >--role--</option>
+                <option value = "Manufacturer">Manufacturer</option>
+                <option value = "Logistic">Logistic</option>
+                <option value = "Seller">Seller</option>
+                <option value = "Distributor">Distributor</option>
+                <option value = "Customer">Customer</option>
+             </select></div>
+
+             <div>
+                <select name = "status">
+                <option value = "inactive" selected >Inactive</option>
+                <option value = "active">Active</option>
+             </select></div>
            
 
-            <button>SIGN IN</button>
+            <button>SIGN UP</button>
         </form>
     </div>
     <a href="/login">Login</a>
