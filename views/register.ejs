@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+<body>
+    <div>
+        <h1>Sign Up!</h1>
+        <% if (messages) { %>
+            <p><%= messages.error %></p>
+            <% } %>
+        <form action="/register" method ="POST">
+            <div>
+                <input
+                type="name"
+                name="FirstName"
+                placeholder="First Name"
+                />
+            </div>
+           
+            <div>
+                <input
+                type="name"
+                name="LastName"
+                placeholder="Last Name"
+                />
+            </div>
+           
+            <div> 
+                <input
+                type="tel"
+                name="Mobile"
+                placeholder="Mobile"
+                />
+            </div>
+           
+            <div>
+                <input
+                type="email"
+                name="email"
+                placeholder="email"
+                />
+            </div>
+            
+            <div>
+                <input 
+                type="password"
+                name="password"
+                placeholder="password"
+                />
+            </div>
+           
+
+            <button>SIGN IN</button>
+        </form>
+    </div>
+    <a href="/login">Login</a>
+</body>
+</html>
