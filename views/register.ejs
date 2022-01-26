@@ -9,16 +9,17 @@
 </head>
 <body>
     <div>
-        <h1>Sign Up!</h1>
+        <h1 class="h1">Sign Up!</h1>
         <% if (messages) { %>
             <p><%= messages.error %></p>
             <% } %>
-        <form action="/register" method ="POST">
+        <form action="/register" method ="POST" class="main">
             <div>
                 <input
                 type="name"
                 name="FirstName"
                 placeholder="First Name"
+                class="form-input"
                 />
             </div>
            
@@ -27,6 +28,7 @@
                 type="name"
                 name="LastName"
                 placeholder="Last Name"
+                class="form-input"
                 />
             </div>
            
@@ -36,6 +38,7 @@
                 type="tel"
                 name="Mobile"
                 placeholder="Mobile"
+                class="form-input"
                 />
             </div>
            
@@ -44,6 +47,7 @@
                 type="email"
                 name="email"
                 placeholder="email"
+                class="form-input"
                 />
             </div>
             
@@ -52,29 +56,32 @@
                 type="password"
                 name="password"
                 placeholder="password"
+                class="form-input"
                 />
             </div>
 
             <div>
-                <select name = "role">
+                <select name = "role" class="form-input">
                 <option value = "role" >--role--</option>
                 <option value = "Manufacturer">Manufacturer</option>
                 <option value = "Logistic">Logistic</option>
                 <option value = "Seller">Seller</option>
                 <option value = "Distributor">Distributor</option>
                 <option value = "Customer">Customer</option>
+                
              </select></div>
 
              <div>
-                <select name = "status">
+                <select name = "status" class="form-input">
                 <option value = "inactive" selected >Inactive</option>
                 <option value = "active">Active</option>
+                
              </select></div>
            
 
-            <button>SIGN UP</button>
+            <button class="form-button">SIGN UP</button>
         </form>
     </div>
-    <a href="/login">Login</a>
+    <p>Already have an account? <a href="/login">Login</a> </p>
 </body>
 </html>

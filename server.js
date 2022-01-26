@@ -84,6 +84,7 @@ app.post("/register", checkNotAuthenticated, async (req, res) => {
                 LastName: req.body.LastName,
                 Mobile: req.body.Mobile,
                 email: req.body.email,
+                role: req.body.role,
                 password: hashedPassword,
                 date: Date.now().toString()
             })
