@@ -13,7 +13,7 @@
         <% if (messages) { %>
             <p><%= messages.error %></p>
             <% } %>
-        <form action="/register" method ="POST" class="main">
+        <form action="/signup" method ="POST" class="main">
             
                 <input
                 type="name"
@@ -73,17 +73,12 @@
 
              
              
-                <select name = "status" class="form-input">
-                <option value = "status" >--status--</option>
-                <option value = "inactive" selected >Inactive</option>
-                <option value = "active">Active</option>
-                
-             </select>
+               
            
 
             <button class="form-button">CREATE ACCOUNT</button>
         </form>
     </div>
-    <p>Already have an account? <a href="/login" class="_login">Login</a> </p>
+    <p>Already have an account? <a href="/signin" class="_login">Login</a> </p>
 </body>
 </html>
