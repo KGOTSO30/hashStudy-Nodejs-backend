@@ -1,0 +1,11 @@
+"FirstName": "jack",
+    "LastName": "mapuranga",
+    "Mobile": "0123456789",
+    "email":"kgotsozyn@gmail.com",
+    "password": "Host",
+    "createdAt": "03-02-2022"
+
+
+
+    "email":"kgotsozyn@gmail.com",
+    "password": "Host"
