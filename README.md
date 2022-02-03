@@ -7,4 +7,4 @@ To start in development mode:
     
     -'npm run dev' 
     
-    - Testing done on postman,  'test file' can edited for convenience 
+    - Testing done on postman,  'test file.txt' can edited and used for convenience 
