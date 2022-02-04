@@ -44,13 +44,13 @@ transporter.verify((error, success) => {
 
 // Signup
 router.post('/signup', (req, res) => {
-    let { FirstName, LastName, Mobile, email, password, createdAt} = req.body;
+    let { FirstName, LastName, Mobile, email, password} = req.body;
         FirstName:FirstName.trim();
         LastName: LastName.trim();
         Mobile: Mobile.trim();
         email: email.trim();
         password: password.trim();
-        createdAt: createdAt.trim();
+        
         
 
                 // some form validations to be done!
@@ -74,7 +74,7 @@ router.post('/signup', (req, res) => {
                             Mobile,
                             email,
                             password: hashedPassword,
-                            createdAt,
+                            createdAt: Date.now(),
                             verified: false
                         });
 

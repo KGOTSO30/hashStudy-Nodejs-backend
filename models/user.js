@@ -15,7 +15,11 @@ const UserSchema = new Schema({
         default: 'Inactive'
     },
    
-    role: String,
+    role: {
+        type: String,
+        default: 'Customer',
+        enum: ["Manufacturer","Logistic", "Seller", "Distributor","Customer"]
+       },
     verified: Boolean
 });
 
