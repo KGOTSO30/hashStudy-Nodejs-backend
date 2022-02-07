@@ -11,6 +11,6 @@ const PasswordResetSchema = new Schema({
 
 });
 
-const UserVerification = mongoose.model("PasswordReset", PasswordResetSchema);
+const PasswordReset = mongoose.model("PasswordReset", PasswordResetSchema);
 
 module.exports = PasswordReset;

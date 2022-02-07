@@ -1,4 +1,7 @@
-"FirstName": "jack",
+
+http://localhost:5000/user/signup
+
+    "FirstName": "jack",
     "LastName": "mapuranga",
     "Mobile": "0123456789",
     "email":"kgotsozyn@gmail.com",
@@ -7,5 +10,23 @@
 
 
 
+http://localhost:5000/user/signin
+
     "email":"kgotsozyn@gmail.com",
     "password": "Host"
+
+
+
+
+/////////////////////////////////////////////Password Reset /////////////////////
+
+http://localhost:5000/user/resetPassword
+
+    "userId":"from browser page",
+    "resetString" : "from browser page",
+    "newPassword": "Host2"
+
+
+
+    "email":"kgotsozyn@gmail.com",
+    "password": "Host2"
